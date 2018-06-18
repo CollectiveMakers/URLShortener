@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "Redirect-API": {
+            "matchCondition": {
+                "route": "/{shortUrl}"
+            },
+            "backendUri": "http://%WEBSITE_HOSTNAME%/api/UrlRedirect/{shortUrl}"
+        }
+    }
+}
